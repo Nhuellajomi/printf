@@ -76,8 +76,7 @@ int print_b(va_list b)
 	unsigned int a[32];
 	int count;
 
-	n = va_ar
-	(b, unsigned int);
+	n = va_arg(b, unsigned int);
 	m = 2147483648; /* (2 ^ 31) */
 	a[0] = n / m;
 	for (i = 1; i < 32; i++)
