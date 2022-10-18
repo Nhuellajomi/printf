@@ -36,7 +36,7 @@ Prints a string. Non printable characters are printed as "\x" followed by their 
 The int argument is converted to signed decimal notation.
 .TP
 .B x, X
-The unsigned int argument is converted to unsigned lowercase hexadecimal notation(x), or unsigned uppercase hexadecimal notation(X).
+The unigned int argument is converted to unsigned lowercase hexadecimal notation(x), or unsigned uppercase hexadecimal notation(X).
 .TP
 .B u
 The unsigned int argument is converted to unsigned decimal notation
@@ -59,11 +59,11 @@ A '%' is written but no argument is converted. The complete version specificatio
 To print the day of the year, where weekday and month are pointers to strings and day and year are integers:
 
 #include "main.h"
+
 _printf("%s, %s %d, %d\\n", weekday, month, day, year);
 .SH SEE ALSO
 .I printf(3)
 .SH BUGS
 No known bugs.
 .SH AUTHOR
-Emmanuella Ajomiwe, Jeanty
-
+Emmanuella Ajomiwe, Jeanty Jeanty
