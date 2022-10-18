@@ -92,7 +92,7 @@ int print_p(va_list p)
 	unsigned int a[16];
 	unsigned int i, sum;
 	unsigned long n, m;
-	char *str = "(nil)"
+	char *str = "(nil)";
 
 	n = va_arg(p, unsigned long);
 	if (n == 0)
@@ -114,7 +114,6 @@ int print_p(va_list p)
 		m /= 16;
 		a[i] = (n / m) % 16;
 	}
-
 	for (i = 0, sum = 0; i < 16; i++)
 	{
 		sum += a[i];
